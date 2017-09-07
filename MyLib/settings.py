@@ -31,6 +31,7 @@ ALLOWED_HOSTS = ['192.168.0.200',]
 # Application definition
 
 INSTALLED_APPS = [
+    'ebooks.apps.EbooksConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
