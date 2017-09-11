@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <title>Search</title>
+    </head>
+    <body>
+        {% if error %}
+        <p style="color:orange;">Please submit a search term.</p>
+        {% endif %}
+        <form action="/ebooks/search/" method="get">
+            <input type ='text' name='q'>
+            <input type = 'submit' value='search'>
+        </form>
+        
+    </body>
+</html>
