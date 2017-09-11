@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% if book_info %}
+    <title>{{ book.title }} - Ebook Library</title>
+    {% else %}
+    <title>{{ book.title }} - Ebook Library</title>
+    {% endif %}
+</head>
+<body>
+{% if book_info %}
+    <h2>{{ book_info.title }} </h2>
+    <table>
+        <tr>
+            <td>Book ID:</td>
+            <td>{{ book_info.id}}</td>
+        </tr>
+        <tr>
+            <td>Publisher:</td>
+            <td>{{ book_info.publisher}}</td>
+        </tr>
+        <tr>
+            <td>Year:</td>
+            <td>{{ book_info.pub_year }}</td>
+        </tr>
+        <tr>
+            <td>File name:</td>
+            <td>{{ book_info.file_name }}</td>
+        </tr>
+    </table>
+    <br>
+{% else %}
+    <h2> No information available. </h2>
+{% endif %}
+
+</body>
+</html>

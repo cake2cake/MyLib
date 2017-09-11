@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> book </title>
+</head>
+<body>
+    <form action="{% url 'ebooks:add_book' %}" method="post">
+    {% csrf_token %}
+    <input type="text" name="title" id="title" value="">
+    <input type="submit" value="OK">    
+    </form>
+</body>
+</html>
